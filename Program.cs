@@ -24,15 +24,17 @@ Console.WriteLine(b);
 
 void Zadacha2()
 {
-int number = new Random().Next(100, 10000);
-int result = number;
+int  number = new Random().Next(100, 100000);
+int  result = number;
 if (number < 100) Console.WriteLine ("нету");
 else
 {
-Convert.ToInt64 (result = (number/10)%10);
-}
+string TextNumber = Convert.ToString(number);
+if (TextNumber.Length > 2)
     Console.WriteLine(number);
-    Console.WriteLine(result);
+    Console.WriteLine(TextNumber[2]);
+}
+
 }
 
 void Zadacha3()
